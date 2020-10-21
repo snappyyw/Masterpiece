@@ -50,10 +50,23 @@ function Search2(num,arr){
 };
 
 
-let i=0;
-dt=new Array("0000A0", "A00000", "00A000", "00A0A0", "A000A0", "A0A000");
-function next_cl() {
- document.getElementById("link_1").style.backgroundColor='#'+dt[i++];
- if (i>=dt.length) i=0;
-};
-setInterval(next_cl,500);
+function Polidrom(str){
+    let str2=str.split("").reverse().join("");
+        if(str.toLowerCase()===str2.toLowerCase())
+            return true;
+        else
+            return false;
+}
+
+function glas(str){
+    let res=0;
+    let glasArr = ['е','а','ё','о','э','я','и','ю','у','ы','Е','А','Ё','О','Э','Я','И','Ю','У','Ы'];
+    let glasArrEng = ['A','E','I','O','U','Y','a','e','i','o','u','y'];
+    for(let i = 0; i<str.length; i++)
+    {
+        if(glasArr.includes(str[i]) || glasArrEng.includes(str[i])){
+            res+=1;
+        }
+    }
+    return res;
+}
