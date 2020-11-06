@@ -146,3 +146,5 @@ class DieselCar extends Auto{
     }
 }
 let ford = new DieselCar("Ford",2005,250000,115);
+
+
