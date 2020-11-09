@@ -180,7 +180,8 @@ li{
     align-items: center;
 }
 .Nich-coneiner{
-    padding-right: 35%;
+    padding-right: 25%;
+    padding-left: 7%;
     max-width: 1400px;
 }
 .Nich-citata{
@@ -188,4 +189,34 @@ li{
     font-size: 90px;
     font-weight: 600;
     color: rgb(251, 255, 0);
+}
+
+.gay__inner {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: url("img/gay_back.png") no-repeat;
+    background-size: cover;
+}
+
+.gay__content{
+    margin: auto, 0;
+    position: absolute;
+    text-align: center;
+    left: 45%;
+    top: 30%;
+    z-index: 10;
+}
+
+.gay__suptext{
+    font-family: 'Monoton', cursive;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.gay__text{
+    text-transform: uppercase;
+    font-family: 'Iceland', cursive;
+    font-size: 50px;
+    font-weight: 400;
 }
